@@ -7,7 +7,7 @@ select:focus {
 }
 
 .principal__title {
-  padding-top: 10vh;
+  padding-top: 2vh;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -87,6 +87,17 @@ select:focus {
 .search__results {
   display: none;
   height: calc(100vh - 50px);
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .search__reference {
@@ -137,6 +148,43 @@ select:focus {
 .search__details p {
   margin: 0;
   padding: 10px;
+}
+
+.search__restart img {
+  height: 60%;
+  animation: rotating 10s linear infinite;
+}
+.search__restart:hover {
+  background: #1a3166;
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.search__restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #407bff;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 0 auto;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 1s;
 }
 
 @media (max-width: 600px) {
