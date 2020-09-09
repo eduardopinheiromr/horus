@@ -279,7 +279,6 @@ restartBtn.onclick = () => {
 };
 
 function stepOne() {
-  autocomplete(document.getElementById("brandsInput"), brands);
   inputDiv.innerHTML = stepOneHTML;
   searchBtn.onclick = () => {
     inputDiv.innerHTML = stepTwoHTML;
@@ -287,5 +286,9 @@ function stepOne() {
     searchStepSelector(inputDiv.innerHTML);
   };
 }
+
+setTimeout(() => {
+  autocomplete(document.getElementById("brandsInput"), brands);
+}, 100);
 
 stepOne();
