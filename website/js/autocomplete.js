@@ -1,27 +1,3 @@
-var brands = [
-  "Chevrolet",
-  "Volkswagen",
-  "Fiat",
-  "Renault",
-  "Ford",
-  "Toyota",
-  "Hyundai",
-  "Jeep",
-  "Honda",
-  "Nissan",
-  "Citroën",
-  "Mitsubishi",
-  "Peugeot",
-  "Chery",
-  "BMW",
-  "Mercedes",
-  "Kia",
-  "Audi",
-  "Volvo",
-  "Land",
-];
-autocomplete(document.getElementById("brandsInput"), brands);
-
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/

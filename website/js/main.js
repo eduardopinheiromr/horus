@@ -1,3 +1,26 @@
+var brands = [
+  "Chevrolet",
+  "Volkswagen",
+  "Fiat",
+  "Renault",
+  "Ford",
+  "Toyota",
+  "Hyundai",
+  "Jeep",
+  "Honda",
+  "Nissan",
+  "Citroën",
+  "Mitsubishi",
+  "Peugeot",
+  "Chery",
+  "BMW",
+  "Mercedes",
+  "Kia",
+  "Audi",
+  "Volvo",
+  "Land",
+];
+
 var models = [
   "Avalon XLS 3.0",
   "Band. Jipe 4x4 Sport 3.7 Diesel",
@@ -256,6 +279,7 @@ restartBtn.onclick = () => {
 };
 
 function stepOne() {
+  autocomplete(document.getElementById("brandsInput"), brands);
   inputDiv.innerHTML = stepOneHTML;
   searchBtn.onclick = () => {
     inputDiv.innerHTML = stepTwoHTML;
